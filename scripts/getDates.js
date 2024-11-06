@@ -13,8 +13,8 @@ const hamButton = document.querySelector('#myButton');
 const navigation = document.querySelector('.menuLinks');
 
 hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
 
 
@@ -22,8 +22,8 @@ const darkButton = document.querySelector('#darkBtn');
 const body = document.querySelector("body");
 const main = document.querySelector("main");
 
-darkButton.addEventListener('click', () => {
-    main.classList.toggle('dark');
+darkButton.addEventListener('click',()=>{
+	main.classList.toggle('dark');
     body.classList.toggle('dark');
 
 });
