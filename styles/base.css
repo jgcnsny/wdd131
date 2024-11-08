@@ -9,29 +9,32 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
-header {
-	background-color: #294166;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	color: #fff;
-	font-size: 30px;
-	position: relative;
-	text-align: center;
-}
-
-header,
 main {
 	margin: 0 auto;
 }
 
+header {
+	background-color: #294166;
+	padding: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	color: #fff;
+	padding: 20px;
+	font-size: 30px;
+}
 
 nav {
 	background-color: #000;
-	max-width: 100%;
-	position: relative;
-	margin-top: 10px;
+	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 0px;
+
 }
 
 #myButton::before {
@@ -56,6 +59,7 @@ ul.menuLinks {
 	padding: 0;
 	width: 100%;
 	background-color: #000;
+	justify-content: space-evenly;
 }
 
 ul.menuLinks li a {
@@ -63,6 +67,7 @@ ul.menuLinks li a {
 	padding: .7rem 2vw;
 	color: #fff;
 	text-decoration: none;
+	font-size: 20px;
 }
 
 ul.menuLinks a:hover {
@@ -75,23 +80,15 @@ li.active a {
 	background-color: #502d19;
 }
 
-
-
-/* css for open class*/
+/* CSS for open class */
 #myButton.open::before {
-	content: "x";
+	content: "✕";
 }
 
 ul.menuLinks.open {
 	display: block;
 }
 
-h1 {
-	color: #fff;
-	padding: 10px;
-	font-size: 30px;
-	margin: 0;
-}
 
 .grid-container {
 	display: grid;
