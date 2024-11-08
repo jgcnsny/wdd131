@@ -18,12 +18,3 @@ hamButton.addEventListener('click', () => {
 });
 
 
-const darkButton = document.querySelector('#darkBtn');
-const body = document.querySelector("body");
-const main = document.querySelector("main");
-
-darkButton.addEventListener('click',()=>{
-	main.classList.toggle('dark');
-    body.classList.toggle('dark');
-
-});
