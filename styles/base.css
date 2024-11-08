@@ -89,7 +89,6 @@ ul.menuLinks.open {
 	display: block;
 }
 
-
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -98,27 +97,79 @@ ul.menuLinks.open {
 	max-width: 1000px;
 	padding: 0 20px;
 
-
 }
 
-main img {
-	width: 150px;
-	height: auto;
-	border: 1px solid steelblue;
-	padding: 2px;
-	box-shadow: 0 0 30px gray;
-	float: right;
-	margin: 1rem 0 1rem 1rem;
+.grid-container section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.grid-container section span {
+    display: block;
+    background-color: #294166;
+    color: white;
+    padding: .7rem 0;
+    text-align: center;
 }
 
 .card {
 	background-color: #fff;
 	border-radius: 10px;
-	padding: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	margin: 1rem 0;
+	border-radius: 5px;
 
+}
 
+.about-me, .location{
+	padding:20px;
+}
+
+.about-me p, .location p {
+	margin: 20px 0 20px 0;
+	text-align: left;
+	padding: 10px;
+}
+
+.about-me img {
+	width: 150px;
+	height: auto;
+	border: 1px solid steelblue;
+	box-shadow: 0 0 30px gray;
+	float: right;
+	margin: 1rem 0 1rem 1rem;
+}
+
+.location .location-content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.location figure {
+    margin: 0;
+    text-align: center;
+}
+
+.location img {
+    width: 150px;
+	height: auto;
+	border: 1px solid steelblue;
+	float: right;
+	margin: 2.5rem 0 1rem 1rem;
+}
+
+.location figcaption {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+	text-align: center;
 }
 
 .card ul {
@@ -135,19 +186,7 @@ main img {
 	padding: 1rem;
 }
 
-.card h2 {
-	background-color: #294166;
-	color: #fff;
-	border-bottom: 1px solid #8d8d8d;
-	padding: 10px;
-	text-align: center;
 
-}
-
-.card p {
-	margin: 20px 0 20px 0;
-	text-align: center;
-}
 
 footer {
 	background-color: #294166;
