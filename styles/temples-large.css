@@ -1,0 +1,40 @@
+@media only screen and (min-width: 38rem) {
+	header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #menuButton {
+        display: none; /* Hide menu button on larger screens */
+    }
+
+    ul.navLinks {
+        display: flex;
+        flex-direction: row; /* Display menu links in a row on large screens */
+        width: auto;
+        gap: 20px;
+    }
+
+    ul.navLinks li a {
+        padding: 0.7rem 1vw;
+        text-align: center;
+    }
+	
+	ul.navLinks a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+
+	.grid-container {
+		grid-template-columns: 3fr 1fr;
+		max-width: none;
+		width: 80%;
+    	}
+}
