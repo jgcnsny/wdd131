@@ -1,3 +1,19 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #294166;
+    --accent1-color: #fff;
+    --accent2-color: #502d19;
+
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Montserrat',sans-serif;
+
+    --nav-background-color:#000;
+    --nav-link-color:#fff;
+    --nav-link2-color:#fff;
+    --nav-hover-link-color:#000;
+    --nav-hover-background-color:#fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +22,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--heading-font);
 }
 
 main {
@@ -14,10 +30,10 @@ main {
 }
 
 header {
-    background-color: #000;
+    background-color: var(--primary-color);
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #fff;
+    color: var(--accent1-color);
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -26,7 +42,7 @@ header {
 }
 
 h1 {
-    color: #fff;
+    color: var(--accent1-color);
     padding: 10px;
     font-size: 30px;
     margin: 0;
@@ -51,7 +67,7 @@ nav {
     font-size: 2rem;
     background: none;
     border: none;
-    color: #fff;
+    color: var(--accent1-color);
     cursor: pointer;
     text-align: right;
     padding: .2rem;
@@ -69,7 +85,7 @@ ul.navLinks {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: var(--nav-background-color);
 }
 
 ul.navLinks.open {
@@ -80,7 +96,7 @@ ul.navLinks.open {
 ul.navLinks li a {
     display: block;
     padding: .7rem 2vw;
-    color: #fff;
+    color: var(--nav-link-color);
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -88,13 +104,13 @@ ul.navLinks li a {
 }
 
 ul.navLinks a:hover {
-    color: #000;
-    background-color: #fff;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 li.active a {
-    color: #fff;
-    background-color: #502d19;
+    color: var(--nav-link-color);
+    background-color: var(--accent2-color);
 }
 
 
@@ -133,17 +149,17 @@ figcaption {
 
 
 footer {
-    background-color: #294166;
+    background-color: var(--secondary-color);
     margin-top: 130px;
     padding: 20px;
-    color: #fff;
+    color: var(--accent1-color);
     width: 100%;
 }
 
 
 footer p {
     text-align: center;
-    color: #fff;
+    color: var(--accent1-color);
     font-size: 15px;
     margin: 1rem 2rem 1rem 1rem;
 }
