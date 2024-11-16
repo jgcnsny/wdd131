@@ -20,8 +20,8 @@ header {
     color: #fff;
     font-size: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Aligns items vertically in the header */
+    justify-content: space-between; 
 }
 
 h1 {
@@ -33,7 +33,8 @@ h1 {
 }
 
 nav {
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #myButton::before {
@@ -51,8 +52,9 @@ nav {
     border: none;
     color: #fff;
     cursor: pointer;
-    text-align: right;
     padding: .2rem;
+    margin-left: auto; /* Pushes the button to the right */
+    order: 2;
 }
 
 ul.navLinks {
