@@ -36,16 +36,16 @@ nav {
     width: 100%;
 }
 
-#menuButton::before {
+#myButton::before {
     content: "☰";
 }
 
 /* CSS for open class */
-#menuButton.open::before {
+#myButton.open::before {
 	content: "✕";
 }
 
-#menuButton {
+#myButton {
     font-size: 2rem;
     background: none;
     border: none;

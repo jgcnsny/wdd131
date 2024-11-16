@@ -9,7 +9,7 @@ let lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
 
-const hamButton = document.querySelector('#menuButton');
+const hamButton = document.querySelector('#myButton');
 const navigation = document.querySelector('.navLinks');
 
 hamButton.addEventListener('click', () => {
