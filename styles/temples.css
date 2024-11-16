@@ -41,6 +41,13 @@ header {
     position: relative;
 }
 
+header.open {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+
+
 h1 {
     color: var(--accent1-color);
     padding: 10px;
@@ -65,14 +72,13 @@ nav {
 
 #myButton {
     font-size: 2rem;
-    background: none;
     border: none;
+    background: none;
     color: var(--accent1-color);
-    cursor: pointer;
-    text-align: right;
-    padding: .2rem;
-    margin-left: auto;
-    /*order: 2;*/
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
 }
 
 ul.navLinks {
@@ -81,7 +87,7 @@ ul.navLinks {
     list-style: none;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     width: 100%;

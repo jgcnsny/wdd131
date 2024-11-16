@@ -11,8 +11,10 @@ document.getElementById('lastModified').textContent = `Last Modified: ${lastModi
 
 const hamButton = document.querySelector('#myButton');
 const navigation = document.querySelector('.navLinks');
+const header = document.querySelector('header');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
+	header.classList.toggle('open');
 });
