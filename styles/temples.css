@@ -75,6 +75,7 @@ nav {
     border: none;
     background: none;
     color: var(--accent1-color);
+    cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 1rem;
