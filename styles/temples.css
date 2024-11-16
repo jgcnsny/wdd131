@@ -91,6 +91,39 @@ li.active a {
 }
 
 
+h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin: 20px auto; 
+}
+
+.temple-gallery img {
+	width: 300px;
+	height: auto;
+	border: 1px solid gray;
+	margin: 1rem 0 1rem 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
 
 footer {
 	background-color: #294166;

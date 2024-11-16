@@ -17,7 +17,7 @@
 
     ul.navLinks {
         display: flex;
-        flex-direction: row; /* Display menu links in a row on large screens */
+        flex-direction: row;
         width: auto;
         gap: 20px;
     }
@@ -32,9 +32,9 @@
 		background-color: #fff;
 	}
 
-	.grid-container {
-		grid-template-columns: 3fr 1fr;
+	.spotlight-grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
 		max-width: none;
-		width: 80%;
-    	}
+		width: 90%;
+    }
 }
