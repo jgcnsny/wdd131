@@ -21,9 +21,10 @@
 		background-color: #fff;
 	}
 
-	.temple-gallery {
-		grid-template-columns: 1fr 1fr 1fr;
-		max-width: none;
-		width: 90%;
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 50px;
+        gap: 10px;
     }
 }
