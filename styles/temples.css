@@ -20,8 +20,9 @@ header {
     color: #fff;
     font-size: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 h1 {
@@ -33,7 +34,8 @@ h1 {
 }
 
 nav {
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #myButton::before {
@@ -53,16 +55,21 @@ nav {
     cursor: pointer;
     text-align: right;
     padding: .2rem;
+    margin-left: auto;
+    /*order: 2;*/
 }
 
 ul.navLinks {
     display: none;
-    list-style-type: none;
+    flex-direction: column;
+    list-style: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
     background-color: #000;
-    flex-direction: column;
 }
 
 ul.navLinks.open {
