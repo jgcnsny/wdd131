@@ -1,3 +1,21 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #294166;
+    --accent1-color: #fff;
+    --accent2-color: #502d19;
+
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Montserrat',sans-serif;
+
+    --nav-background-color:#000;
+    --nav-link-color:#fff;
+    --nav-link2-color:#fff;
+    --nav-hover-link-color:#000;
+    --nav-hover-background-color:#fff;
+}
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,7 +24,7 @@
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: var(--heading-font);
 }
 
 main {
@@ -14,7 +32,7 @@ main {
 }
 
 header {
-	background-color: #294166;
+	background-color: var(--secondary-color);
 	padding: 0px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #fff;
@@ -24,7 +42,7 @@ header {
 }
 
 h1 {
-	color: #fff;
+	color: var(--accent1-color);
 	padding: 20px;
 	font-size: 30px;
 }
@@ -46,16 +64,16 @@ h1 {
 
 
 footer {
-	background-color: #294166;
+	background-color:var(--secondary-color);
 	padding: 20px;
-	color: #fff;
+	color: var(--accent1-color);
 	width: 100%;
 }
 
 
 footer p {
 	text-align: center;
-	color: #fff;
+	color: var(--accent1-color);
 	font-size: 15px;
 	margin: 1rem 2rem 1rem 1rem;
 }
