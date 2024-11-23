@@ -11,12 +11,33 @@
 
     .weather-card{
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 70%;
         right: 5%;
         background-color: rgba(255, 255, 255, 0.5);
         padding: 1rem;
         text-align: center;
     }
+
+    .weather-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color:var(--secondary-color);
+      }
+    
+     .image {
+        display: none;
+     }
+    
+     .icon {
+        display: block;
+     }
+    
+     .icon::after {
+        content: " ⛅";
+        font-size: 30px;
+      }
     
 }

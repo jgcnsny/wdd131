@@ -43,8 +43,19 @@
             </section>
 
             <section class="weather-card">
-                <h2>Weather</h2>
-                <div id="weather-container"></div>
+                <div class="weather-icon">
+                    <h2>Weather</h2>
+                    <ol>
+                      <li class="icon"></li>
+                    </ol>
+                    <img class="image" src="images/weather-icon.svg" alt="Weather Icon" loading="lazy" width="200" height="200">  
+                </div>
+                <ul>
+                    <li><span id="temperature"></span></li>
+                    <li><span id="conditions"></span></li>
+                    <li><span id="wind"></span></li>
+                    <li><span id="windchill"></span></li>
+                </ul>
             </section>
     </div>  
         
@@ -54,7 +65,7 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script defer src="scripts/temples.js"></script>
+    <script defer src="scripts/place.js"></script>
 
 </body>
 </html>
