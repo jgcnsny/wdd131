@@ -1,43 +1,57 @@
-@media only screen and (min-width: 38rem) {
-	.data-card{
+/* Large screens: Above 64rem */
+@media only screen and (min-width: 64rem) {
+    .data-card {
         position: absolute;
         top: 15%;
         left: 5%;
-        right: 70%;
+        width: 30%;
         background-color: rgba(255, 255, 255, 0.5);
-        padding: 1rem;
-        text-align: center;
     }
 
-    .weather-card{
+    .weather-card {
         position: absolute;
-        top: 70%;
-        left: 70%;
-        right: 5%;
+        top: 60%;
+        left: 65%;
+        width: 30%;
         background-color: rgba(255, 255, 255, 0.5);
-        padding: 1rem;
-        text-align: center;
     }
 
+    /* Weather icon styles */
     .weather-icon {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color:var(--secondary-color);
-      }
-    
-     .image {
+        background-color: var(--secondary-color);
+    }
+
+    .image {
         display: none;
-     }
-    
-     .icon {
+    }
+
+    .icon {
         display: block;
-     }
-    
-     .icon::after {
+    }
+
+    .icon::after {
         content: " ⛅";
         font-size: 30px;
-      }
-    
+    }
 }
+
+/* Medium screens: 38rem to 64rem */
+@media only screen and (min-width: 38rem) and (max-width: 64rem) {
+    .data-card {
+        position: relative;
+        width: 45%; 
+        margin: 5% auto 2%; 
+    }
+
+    .weather-card {
+        position: relative;
+        width: 45%; 
+        margin: 2% auto; 
+    }
+}
+
+
