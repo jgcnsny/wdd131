@@ -3,19 +3,19 @@
         position: absolute;
         top: 15%;
         left: 5%;
-        width: 30%;
+        width: 20%;
         background-color: rgba(255, 255, 255, 0.5);
     }
 
     .weather-card {
         position: absolute;
         top: 80%;
-        left: 65%;
-        width: 30%;
+        left:75%;
+        width: 20%;
         background-color: rgba(255, 255, 255, 0.5);
     }
 
-    /* Weather icon styles */
+
     .weather-icon {
         display: flex;
         flex-direction: row;
