@@ -10,9 +10,10 @@ document.getElementById('lastModified').textContent = `Last Modified: ${lastModi
 
 
 
-const temperature = 27;
+const temperature = 80;
 const conditions = "Sunny";
-const wind = 10;
+const wind = 6;
+let windChill;
 
 const tempElement = document.getElementById("temperature");
 const conditionsElement = document.getElementById("conditions");
@@ -23,14 +24,14 @@ function calculateWindChill() {
     return 35.74 + 0.6215 * temperature - 35.75 * wind**0.16 + 0.4275 * temperature * wind**0.16;
   }
   
-  if (temperature <= 10  && wind > 4.8) {
+  if (temperature <= 55  && wind > 3) {
     windChill = calculateWindChill().toFixed(1);
   } else {
     windChill = "N/A";
   }
 
-tempElement.innerHTML = `<strong>Temperature:</strong> ${temperature}°C`;
+tempElement.innerHTML = `<strong>Temperature:</strong> ${temperature}°F`;
 conditionsElement.innerHTML = `<strong>Condition:</strong> ${conditions}`;
-windElement.innerHTML = `<strong>Wind Speed:</strong> ${wind} km/h`;
-windchillElement.innerHTML = `<strong>Wind Chill:</strong> ${windChill}°C`;
+windElement.innerHTML = `<strong>Wind Speed:</strong> ${wind} mph`;
+windchillElement.innerHTML = `<strong>Wind Chill:</strong> ${windChill}°F`;
 
