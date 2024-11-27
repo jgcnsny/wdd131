@@ -1,0 +1,25 @@
+@media only screen and (min-width: 38rem) {
+    
+    #myButton {
+        display: none;
+    }
+
+    ul.navLinks {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        gap: 20px;
+    }
+
+    ul.navLinks li a {
+        padding: 0.7rem 1vw;
+    }
+	
+	ul.navLinks a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+
+   
+}
