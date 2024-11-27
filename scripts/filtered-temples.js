@@ -102,43 +102,44 @@ const temples = [
   ];
 
 
- /* Declare and initialize global variables */
-const templesElement = document.getElementById("temples");
+/* Declare and initialize global variables */
+const templesElement = document.getElementById('temples');
+
 let templeList = [];
 
 /* async displayTemples Function */
-const displayTemples = (templeArray) => {
-  templeArray.forEach((temple) => {
-    // Create elements
-    const articleElement = document.createElement("article");
-    const h3Element = document.createElement("h3");
-    const imgElement = document.createElement("img");
+const displayTemples = (temples) => {
+    temples.forEach(temple => {
+        const articleElement = document.createElement('article');
+        const h3Element = document.createElement('h3');
+        const imgElement = document.createElement('img');
+		const locationElement = document.createElement('p');
+		const dedicatedElement = document.createElement('p');
+		const sizeElement = document.createElement('p');
 
-    // Set content and attributes
-    h3Element.textContent = temple.templeName;
-    imgElement.setAttribute("src", temple.imageUrl);
-    imgElement.setAttribute("alt", `Image of ${temple.templeName}`);
-    imgElement.setAttribute("loading", "lazy");
+        h3Element.textContent = temple.templeName;
+		locationElement.innerHTML = `<strong>Location:</strong> ${temple.location}`;
+		dedicatedElement.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+		sizeElement.innerHTML = `<strong>Area:</strong> ${temple.area} sq ft`;
+        imgElement.setAttribute('src', temple.imageUrl);
+        imgElement.setAttribute('alt', temple.location);
 
-    // Append to article
-    articleElement.appendChild(h3Element);
-    articleElement.appendChild(imgElement);
+        articleElement.appendChild(h3Element);
+		articleElement.appendChild(locationElement);
+		articleElement.appendChild(dedicatedElement);
+		articleElement.appendChild(sizeElement);
+        articleElement.appendChild(imgElement);
+		
 
-    // Append to the DOM
-    templesElement.appendChild(articleElement);
-  });
-};
+        templesElement.appendChild(articleElement);
+    });
+}
 
-/* Fetch Temples or Use Local Array */
-const getTemples = async () => {
-  try {
-    // Use the local array instead of fetching
-    templeList = temples;
-    displayTemples(templeList);
-  } catch (error) {
-    console.error("Error fetching temples:", error);
-  }
-};
+/* Use the temples array directly */
+const getTemples = () => {
+    templeList = temples;  // Use the predefined temples array
+    displayTemples(templeList);  // Display the temples
+}
 
-// Call the function
+// Call the function to display the temples
 getTemples();

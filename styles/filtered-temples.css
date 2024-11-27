@@ -145,7 +145,7 @@ main {
 }
 
 #temples article {
-    height: 250px;
+    height: auto;
     margin: .5rem;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
@@ -155,12 +155,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-#temples h4 {
-    color: navy;
-    font-size: smaller;
-}
-
 
 #temples img {
     width: 250px;
