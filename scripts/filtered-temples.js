@@ -101,15 +101,11 @@ const temples = [
 	  }
   ];
 
+displayTemplesCards(temples);
 
-/* Declare and initialize global variables */
-const templesElement = document.getElementById('temples');
-
-let templeList = [];
-
-/* async displayTemples Function */
-const displayTemples = (temples) => {
-    temples.forEach(temple => {
+function displayTemplesCards(filteredTemples){
+	document.querySelector('#temples').innerHTML = "";
+    filteredTemples.forEach(temple => {
         const articleElement = document.createElement('article');
         const h3Element = document.createElement('h3');
         const imgElement = document.createElement('img');
@@ -117,12 +113,13 @@ const displayTemples = (temples) => {
 		const dedicatedElement = document.createElement('p');
 		const sizeElement = document.createElement('p');
 
-        h3Element.textContent = temple.templeName;
+        h3Element.innerHTML = `${temple.templeName}`;
 		locationElement.innerHTML = `<strong>Location:</strong> ${temple.location}`;
 		dedicatedElement.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
 		sizeElement.innerHTML = `<strong>Area:</strong> ${temple.area} sq ft`;
         imgElement.setAttribute('src', temple.imageUrl);
-        imgElement.setAttribute('alt', temple.location);
+        imgElement.setAttribute('alt', `< ${temple.templeName} Temple`);
+		imgElement.setAttribute('loading', 'lazy');
 
         articleElement.appendChild(h3Element);
 		articleElement.appendChild(locationElement);
@@ -131,15 +128,36 @@ const displayTemples = (temples) => {
         articleElement.appendChild(imgElement);
 		
 
-        templesElement.appendChild(articleElement);
+        document.querySelector('#temples').appendChild(articleElement);
     });
 }
 
-/* Use the temples array directly */
-const getTemples = () => {
-    templeList = temples;  // Use the predefined temples array
-    displayTemples(templeList);  // Display the temples
-}
 
-// Call the function to display the temples
-getTemples();
+
+
+const homeLink = document.getElementById('home');
+const oldLink = document.getElementById('old');
+const newLink = document.getElementById('new');
+const largeLink = document.getElementById('large');
+const smallLink = document.getElementById('small');
+
+homeLink.addEventListener('click', () => {
+	displayTemplesCards(temples)
+});
+
+oldLink.addEventListener('click', () => {
+	displayTemplesCards(temples.filter(temple => new Date(temple.dedicated) < new Date(1900, 0, 1)));
+});
+
+newLink.addEventListener('click', () => {
+	displayTemplesCards(temples.filter(temple => new Date(temple.dedicated) > new Date(2000, 0, 1)));
+});
+
+largeLink.addEventListener('click', () => {
+	displayTemplesCards(temples.filter(temple => temple.area >  90000 ));
+});
+
+smallLink.addEventListener('click', () => {
+	displayTemplesCards(temples.filter(temple => temple.area < 10000  ));
+});
+
