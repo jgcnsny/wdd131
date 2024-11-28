@@ -134,12 +134,15 @@ function displayTemplesCards(filteredTemples){
         imgElement.setAttribute('src', temple.imageUrl);
         imgElement.setAttribute('alt', `< ${temple.templeName} Temple`);
 		imgElement.setAttribute('loading', 'lazy');
+		imgElement.setAttribute('width', '300'); 
+        imgElement.setAttribute('height', '200');
 
         articleElement.appendChild(h3Element);
 		articleElement.appendChild(locationElement);
 		articleElement.appendChild(dedicatedElement);
 		articleElement.appendChild(sizeElement);
         articleElement.appendChild(imgElement);
+		
 		
 
         document.querySelector('#temples').appendChild(articleElement);
