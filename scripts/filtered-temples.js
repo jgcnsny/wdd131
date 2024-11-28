@@ -93,6 +93,20 @@ const temples = [
 		imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-utah/400x250/provo-temple-lds-890642-wallpaper.jpg"
 	},
 	{
+		templeName: "Barranquilla Colombia",
+		location: "Barranquilla, Colombia",
+		dedicated: "2018, December, 9",
+		area: 25300,
+		imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/400x250/2-Barranquilla-Columblia-Temple-2135201.jpg"
+	},
+	{
+		templeName: "St. George Utah",
+		location: "St. George, Utah, United States",
+		dedicated: "1877, April, 6",
+		area: 142000,
+		imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/1280x800/st-george-temple-lds-149536-wallpaper.jpg"
+	},
+	{
 		templeName: "Salt Lake",
 		location: "Salt Lake City, Utah, United States",
 		dedicated: "1893, April, 6",
