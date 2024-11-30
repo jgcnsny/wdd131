@@ -1,0 +1,12 @@
+1. Project Subject
+    -Online Art/Portfolio Gallery Website
+
+2. Description of Planned Content
+    - The Online Art/Portfolio Gallery Website will consist of four pages: Home, About, Gallery, and Contact.
+        -Home Page:  Introduce the portfolio and engage visitors with a visually appealing overview. 
+        -About Page: Provide background information about the artist. 
+        -Gallery Page: Showcase a collection of artworks or projects in an organized and visually appealing way.
+        -Contact Page: Enable visitors to reach out or connect with the artist.
+
+3. Reason
+    -The Online Art/Portfolio Gallery Website was chosen to showcase creativity and talent, connect with a broader audience, and build an artist's online presence while applying web development skills to create a visually appealing and user-friendly platform
