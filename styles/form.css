@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+main {
+	margin: 0 auto;
+}
+
+header {
+	background-color: #294166;
+	padding: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	color: #fff;
+	padding: 20px;
+	font-size: 30px;
+}
+
+
+footer {
+	background-color: #294166;
+	margin-top: 130px;
+	padding: 20px;
+	color: #fff;
+	width: 100%;
+}
+
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin: 1rem 2rem 1rem 1rem;
+}
+
+
+
+
+
+/*----------- FORM STYLING --------------*/
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+.form-content {
+  margin-bottom: 20px;
+	text-align: left;
+}
+  
+.review-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20;
+  }
+
+  
+.review-form fieldset {
+  margin: 2rem 0;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 20px;
+    
+}
+
+.review-form label {
+  display: block;
+  padding-top: 1rem;
+  color: #000;
+  font-size: .9rem;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form input[type="date"],
+.review-form textarea
+ {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+  
+.review-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+  
+.rating label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+  
+.rating input[type="radio"] {
+  margin-top: 5px;
+}
+  
+.features input[type="checkbox"] {
+  margin-right: 6px;
+}
+  
+.review-form input[type="submit"] {
+  border: none;
+  background-color: #294166;
+  color: white;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.review-form input[type="submit"]:hover{
+    background-color: #000;
+}
