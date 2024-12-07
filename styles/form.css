@@ -83,7 +83,7 @@ footer p {
 }
 
 
-.review-form label,p {
+.review-form label,.review-form p {
   display: block;
   padding-top: 1rem;
   color: #000;
