@@ -43,7 +43,7 @@ const products = [
      const option = document.createElement("option");
      option.value = product.id;
      option.textContent = product.name;
-     option.id = `option-${product.id}`;
+     option.id = product.id;
 
      productSelect.appendChild(option);
  });
