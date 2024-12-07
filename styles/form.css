@@ -71,7 +71,7 @@ footer p {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  }
+}
 
   
 .review-form fieldset {
@@ -82,7 +82,8 @@ footer p {
     
 }
 
-.review-form label {
+
+.review-form label,p {
   display: block;
   padding-top: 1rem;
   color: #000;
