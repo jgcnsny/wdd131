@@ -128,7 +128,7 @@ footer p {
 .rating input[type="radio"] {
   margin-top: 5px;
 }
-  
+
 .features input[type="checkbox"] {
   margin-right: 6px;
 }
@@ -158,13 +158,12 @@ footer p {
 
 
 .review-form input:required,
-.review-form select:required,
-.review-form input[type="radio"]:required
+.review-form select:required
  {
   border-color: red;
 }
 
 .review-form input:required:valid,
 .review-form select:required:valid {
-  border: solid 2px green;
+  border: solid 1px green;
 }
