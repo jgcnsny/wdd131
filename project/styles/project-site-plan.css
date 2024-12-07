@@ -1,0 +1,43 @@
+body {
+    font-family:"Poppins", sans-serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h2, h3 {
+    font-family: "Poppins", sans-serif;
+    color: #294166;
+}
+
+header {
+    padding: 20px;
+    background-color: #B3CEE5;
+    color: #112A46;
+}
+
+p {
+    padding: 25px;
+    color: #000;
+}
+
+nav {
+    background-color: #B3CEE5 ;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: #112A46;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: #112A46;
+}
+
+nav a:hover{
+    color: #112A46;
+    background-color: #F7CAC9;
+}
