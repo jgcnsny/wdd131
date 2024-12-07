@@ -116,7 +116,7 @@ footer p {
   gap: 10px;
   margin-bottom: 15px;
 }
-  
+
 .rating label {
   display: flex;
   flex-direction: column;
@@ -124,7 +124,7 @@ footer p {
   cursor: pointer;
   font-size: 14px;
 }
-  
+
 .rating input[type="radio"] {
   margin-top: 5px;
 }
