@@ -1,12 +1,4 @@
 @media (min-width: 640px) {
-	/*nav ul {
-		display: flex;
-
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}*/
-
 	#myButton{
 		display: none;
 	}
@@ -21,8 +13,17 @@
 		background-color: #F7CAC9;
 	}
 
+	.event-info h1 {
+		font-size: 60px;
+	}
+	
+	.event-info p {
+		font-size: 25px;
+	}
+	
+
 	.grid-container {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
 		max-width: none;
 		width: 90%;
     }
