@@ -13,8 +13,8 @@
 		background-color: #F7CAC9;
 	}
 
-	.event-info h1 {
-		font-size: 60px;
+	.event-info h1, .album-info h1{
+		font-size: 50px;
 	}
 	
 	.event-info p {

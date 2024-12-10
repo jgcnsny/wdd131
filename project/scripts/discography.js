@@ -113,7 +113,7 @@ const albums = [
     document.querySelector('#albums').innerHTML = "";
   
     filteredAlbums.forEach(album => {
-      // Create elements
+    
       const articleElement = document.createElement('article');
       const cardElement = document.createElement('div');
       const cardFront = document.createElement('div');
@@ -121,7 +121,7 @@ const albums = [
       const imgElement = document.createElement('img');
       const detailsElement = document.createElement('div');
   
-      // Set classes and attributes
+     
       articleElement.classList.add('album-card-container');
       cardElement.classList.add('album-card');
       cardFront.classList.add('album-card-front');
@@ -129,8 +129,10 @@ const albums = [
       imgElement.setAttribute('src', album.imageUrl);
       imgElement.setAttribute('alt', album.albumName);
       imgElement.setAttribute('loading', 'lazy');
+	  imgElement.setAttribute('width', '300'); 
+      imgElement.setAttribute('height', '300');
   
-      // Populate card-back details
+     
       detailsElement.innerHTML = `
         <h3>${album.albumName}</h3>
         <p><strong>Release Date:</strong> ${album.releaseDate}</p>
@@ -139,7 +141,6 @@ const albums = [
         <p><strong>Description:</strong> ${album.description}</p>
       `;
   
-      // Append elements
       cardFront.appendChild(imgElement);
       cardBack.appendChild(detailsElement);
       cardElement.appendChild(cardFront);
@@ -147,7 +148,7 @@ const albums = [
       articleElement.appendChild(cardElement);
       document.querySelector('#albums').appendChild(articleElement);
   
-      // Add event listener for flipping
+      
       cardElement.addEventListener('click', () => {
         cardElement.classList.toggle('flipped');
       });
