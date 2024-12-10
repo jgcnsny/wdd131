@@ -102,6 +102,70 @@ const albums = [
         singles: "Love, Money, Fame",
         description:"Thirteenth extended play (EP)",
         imageUrl: "images/Spill_the_Feels.webp"
+      },
+      {
+        albumName: "Love & Letter",
+        releaseDate: "April 25, 2016",
+        albumType: "Studio Album",
+        singles: "Pretty U",
+        description:"Debut studio album",
+        imageUrl: "images/Love_and_Letter.webp"
+      },
+      {
+        albumName: "Teen, Age",
+        releaseDate: "November 6, 2017",
+        albumType: "Studio Album",
+        singles: "Clap",
+        description:"Second studio album",
+        imageUrl: "images/Teen,_Age.webp"
+      },
+      {
+        albumName: "An Ode",
+        releaseDate: "September 16, 2019",
+        albumType: "Studio Album",
+        singles: "Fear",
+        description:"Third studio album",
+        imageUrl: "images/An_Ode.webp"
+      },
+      {
+        albumName: "Face the Sun",
+        releaseDate: "May 27, 2022",
+        albumType: "Studio Album",
+        singles: "Hot",
+        description:"Fourth studio album",
+        imageUrl: "images/Face_the_Sun.webp"
+      },
+      {
+        albumName: "Love & Letter Repackage Album",
+        releaseDate: "July 4, 2016",
+        albumType: "Studio Album",
+        singles: "Very Nice",
+        description:"A repackaged edition of Love & Letter",
+        imageUrl: "images/Love_Letter_Repackaged.webp"
+      },
+      {
+        albumName: "Special Album 'Director's Cut'",
+        releaseDate: "February 5, 2018",
+        albumType: "Studio Album",
+        singles: "Thanks",
+        description:"A special album and repackaged edition of Teen,Age",
+        imageUrl: "images/Directors_cut.webp"
+      },
+      {
+        albumName: "Sector 17",
+        releaseDate: "July 18, 2022",
+        albumType: "Studio Album",
+        singles: "_World",
+        description:"A repackaged edition of Face the Sun",
+        imageUrl: "images/Sector_17.webp"
+      },
+      {
+        albumName: "17 Is Right Here",
+        releaseDate: "April 29, 2024",
+        albumType: "Compilation album",
+        singles: "Maestro",
+        description:"Korean-language compilation album",
+        imageUrl: "images/17_right_here.webp"
       }
    
   ];
@@ -137,7 +201,7 @@ const albums = [
         <h3>${album.albumName}</h3>
         <p><strong>Release Date:</strong> ${album.releaseDate}</p>
         <p><strong>Album Type:</strong> ${album.albumType}</p>
-        <p><strong>Singles:</strong> ${album.singles}</p>
+        <p><strong>Title Track:</strong> ${album.singles}</p>
         <p><strong>Description:</strong> ${album.description}</p>
       `;
   
