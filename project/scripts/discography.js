@@ -154,3 +154,21 @@ const albums = [
       });
     });
   }
+
+
+
+const filterAlbums = () => {
+    const filter = document.querySelector('#filtered').value;
+    let filteredAlbums = albums; 
+  
+    if (filter !== "all") {
+      filteredAlbums = albums.filter(album => {
+        const year = new Date(album.releaseDate).getFullYear();
+        return year.toString() === filter; 
+      });
+    }
+  
+    displayAlbumCards(filteredAlbums); 
+  };
+
+  document.querySelector('#filtered').addEventListener('change', filterAlbums);
