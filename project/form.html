@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVENTEEN Online Portfolio</title>
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Jillian Gail Cansanay - Project- SEVENTEEN Online Portfolio">
+    <meta name="author" content="Jillian Cansanay">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="sEVENTEEN logo" loading="lazy">
+    
+        <nav>
+            <button id="myButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li  class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+       
+        <div class="form-container">
+            <h2>Message Us</h2>
+            <div class="form-content">
+                <form method="get" action="review.html" class="review-form">
+                    <fieldset>
+                        <label>First Name* <input type="text" name="fname" id="fname" required> </label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required> </label>
+                        <label>Email Address* <input type="email" name="email" id="email" placeholder="youremail@gmail.com" required> </label>
+                        <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" placeholder="1235551234" required> </label>
+
+
+                        <label>Message
+                            <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
+                        </label>
+
+                        <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter">Please subscribe me to the monthly newsletter</label> 
+
+                    </fieldset>
+                    
+                    <input type="submit" value="Send" name="post" id="Send">
+                </form>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <section class="card">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 17 St. Caratland, Horanghae City</p>
+                <p><i class="fas fa-phone"></i> (017) 526-2015</p>
+                <p><i class="fas fa-envelope"></i> contactus@sebong.com</p>
+            </section>
+
+            <section class="card">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15456.962356681217!2d121.48131849999999!3d14.413289800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397f1ad34994137%3A0x39ed6c2329239365!2sPanguil%20River%20Eco%20Park!5e0!3m2!1sen!2sph!4v1707380854391!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+    </div>  
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Jillian Cansanay | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script defer src="scripts/getdates.js"></script>
+
+</body>
+</html>
