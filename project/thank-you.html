@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVENTEEN Online Portfolio</title>
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Jillian Gail Cansanay - Project- SEVENTEEN Online Portfolio">
+    <meta name="author" content="Jillian Cansanay">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="sEVENTEEN logo" loading="lazy">
+    
+        <nav>
+            <button id="myButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li  class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="thank-you-message">
+            <h1>Thank You!</h1>
+            <p> We've received your message and will get back to you as soon as possible. </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | SEVENTEEN Online Portfolio</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script defer src="scripts/getdates.js"></script>
+    
+
+</body>
+</html>
