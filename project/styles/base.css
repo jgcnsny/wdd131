@@ -121,23 +121,16 @@ ul.menuLinks.open {
 
 .event-info, .album-info {
     color: #041427;
-	background-color:#F7CAC9 ;
+	  background-color:#F7CAC9 ;
     padding: 20px;
     text-align: center;
     line-height: 1.6; 
 }
 
-.event-info h1, .album-info h1 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #041427;
-    letter-spacing: 2px;
-}
-
 .event-info p {
     font-size: 16px;
     margin: 0;
+    text-align: center;
 }
 
 .grid-container {
@@ -167,7 +160,7 @@ ul.menuLinks.open {
 h1, h2 {
 	color: #041427;
 	padding: 10px;
-    text-align: center;
+  text-align: center;
 }
 
 .spotlight-grid-container{
@@ -194,17 +187,7 @@ h1, h2 {
     font-size: .8rem;
 }
 
-.spotlight-grid-container h2{
-    border:none;
-}
 
-.spotlight-grid-container section a{
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    color: #294166;
-    margin-top: .5rem;
-    font-size: .8rem;
-}
 
 footer {
 	background-color: #A9BCCD;
@@ -391,4 +374,109 @@ input[type="tel"],
 
 .review-form input:required:valid {
   border: solid 1px green;
+}
+
+
+/*----------------About Page ------------------*/
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 150px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-right: 20px;
+  width: 100%; 
+  grid-column: auto;
+  color:#041427;
+}
+
+.sidebar-content {
+margin-bottom: 20px;
+text-align: left;
+}
+
+.sidebar-item ul {
+padding-left: 2rem;
+list-style: none;
+margin: 10px;
+}
+
+.sidebar-item li, p{
+padding-top: 0.5rem;
+text-align: left;
+}
+
+.sidebar-item h4 {
+	padding: 0.5rem;
+  text-align: left;
+}
+
+.sidebar-item a{
+  text-decoration: none;
+  color: #041427;
+}
+
+.content {
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.image-grid picture {
+  margin: 0;
+  text-align: center;
+}
+
+.image-grid img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px;
+}
+
+.image-grid p{
+margin-top: 5px;
+font-size: 1rem;
+font-weight: bolder;
+text-align: center;
+}
+
+/*banner*/
+.banner {
+  display: none;
+  background-color: #A9BCCD;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  color: #041427;
+  font-size: 1rem;
+}
+
+.banner p {
+  text-align: center;
+}
+.closeButton {
+  color: #041427;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px; 
+  right: 5px;
+  padding: 5px 10px;
+  
+}
+
+.closeButton:hover {
+  background-color:#F7CAC9;
 }

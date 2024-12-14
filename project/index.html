@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img src="images/logo.webp" alt="sEVENTEEN logo" loading="lazy">
+        <img src="images/logo.webp" alt="SEVENTEEN logo" loading="lazy">
     
         <nav>
             <button id="myButton"></button>
@@ -38,6 +38,12 @@
                     <img src="images/hero-large.webp" alt="Seventeen Right Here" loading="lazy" width="1500" height="750">
                 </picture>
             </div>
+            <div id="banner" class="banner">
+                <p>Welcome to SEVENTEEN Online Portfolio.</p>
+                <p><span id="dateVisit"></span></p>
+                <p>You Visit this site <span class="visits"></span> times.</p>
+                <button id="closeButton" class="closeButton">X</button>
+            </div>
             <div class="live-logo">
                 <picture>
                     <source media="(max-width: 400px)" srcset="images/live-logo-small.webp">
@@ -45,6 +51,7 @@
                     <img src="images/live-logo-large.webp" alt="Seventeen Right Here" loading="lazy" width="1500" height="750">
                 </picture>
             </div>
+            
             <div class="video-container">
                 <iframe 
                     width="560" 
@@ -77,7 +84,7 @@
                 </div>
             </div>
         
-            <h2>Album  Spotlight</h2>
+            <h2>ALBUM HIGHTLIGHTS</h2>
             <div class="spotlight-grid-container" id="spotlight">
             </div>
     </main>
@@ -88,6 +95,8 @@
     </footer>
 
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
     
 
 </body>

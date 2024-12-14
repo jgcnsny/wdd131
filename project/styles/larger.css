@@ -13,15 +13,6 @@
 		background-color: #F7CAC9;
 	}
 
-	.event-info h1, .album-info h1{
-		font-size: 50px;
-	}
-	
-	.event-info p {
-		font-size: 25px;
-	}
-	
-
 	.grid-container {
         grid-template-columns: 1fr 1fr;
 		max-width: none;
@@ -33,10 +24,6 @@
 		width: 90%;
 	}
 
-	.image-grid img:hover {
-        transform: scale(1.1); 
-        transition: transform 0.3s ease; 
-    }
 
 	.layout-container {
 		grid-template-columns: minmax(250px, auto) 3fr;
@@ -45,6 +32,11 @@
 	.sidebar {
 		width: 400px;
 	}
+
+	.image-grid img:hover {
+        transform: scale(1.1); 
+        transition: transform 0.3s ease; 
+    }
 
 	.form-container {
         grid-template-columns: 1fr 1fr;
@@ -65,17 +57,6 @@
 		top: 10px;
     	right: 10px;
 	}
-
-	.hero h1, .hero span{
-		font-size: 2.5rem;
-	}
-
-	.call-button {
-		padding: 10px 20px;
-		font-size: 1rem;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%); 
-	}
+	
 
 }
