@@ -31,24 +31,24 @@ document.addEventListener("DOMContentLoaded", function() {
             message = "You last visited " + (differenceInDays === 1 ? "1 day" : differenceInDays + " days") + " ago.";
         }
     } else {
-        // First visit
+        
         message = "Let us know if you have any questions.";
     }
 
-    // Display the message in the sidebar content area
+   
     var sidebarContent = document.querySelector("#dateVisit");
     sidebarContent.textContent = message;
 
-    // Store the current date as the last visit date in localStorage
+    
     localStorage.setItem("lastVisitDate", currentDate.toString());
 });
 
 const bannerContainer = document.querySelector('#banner');
 
-        // Show the banner every time the user visits
+        
         bannerContainer.style.display = 'block';
 
-        // Allow the user to close the banner
+    
         document.getElementById('closeButton').addEventListener('click', function() {
             bannerContainer.style.display = 'none';
 });

@@ -227,11 +227,11 @@ function displayAlbums(albums) {
   });
 }
 
-// Filter and display albums with sales over 500,000
+
 const filteredAlbums = filterAlbumsBySales(albums);
 displayAlbums(filteredAlbums);
 
-// Change the displayed albums every 5 seconds
+
 setInterval(() => {
     displayAlbums(filteredAlbums);
 }, 5000);
